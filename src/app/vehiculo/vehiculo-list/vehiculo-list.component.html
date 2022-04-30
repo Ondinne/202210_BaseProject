@@ -1,26 +1,47 @@
 <div class="container-fluid">
-
-      <table class="table table-hover">
-
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Marca</th>
-            <th scope="col">Linea</th>
-            <th scope="col">Modelo</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr *ngFor="let vehiculo of vehiculos">
-            <th>{{vehiculo.id}}</th>
-            <td>{{vehiculo.marca}}</td>
-            <td>{{vehiculo.linea}}</td>
-            <td>{{vehiculo.modelo}}</td>
-            <td></td>
-          </tr>
-        </tbody>
-
-      </table>
-
+  <div class="header">
+    <img src= "/assets/TuSegundazo.com.svg" alt="Tu_Segundazo">
+  </div>
 </div>
+<hr/>
+<div class="container-fluid">
+  <div class="banner">
+    <img src= "/assets/image 1.svg" alt="Banner_Tu_segundazo">
+  </div>
+</div>
+<hr/>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Linea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let vehiculo of vehiculos">
+        <th>{{vehiculo.id}}</th>
+        <td>{{vehiculo.marca}}</td>
+        <td>{{vehiculo.linea}}</td>
+        <td>{{vehiculo.modelo}}</td>
+        <td></td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>
+<div>
+  <p>Total Renault: {{this.suma}}</p>
+  <p>Total Chevrolet: {{this.suma}}</p>
+  <p>Total Nissan: {{this.suma}}</p>
+</div>
+<div class="container-fluid">
+  <div class="footer">
+    <p class="row justify-content-center">Contact us: +57 3102105253 - info@tusegundazo.com - @tusegundazo</p>
+  </div>
+</div>
+
+
