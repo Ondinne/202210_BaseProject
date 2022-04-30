@@ -18,6 +18,7 @@ export class VehiculoListComponent implements OnInit {
   ngOnInit() {
     this.getVehiculos();
     this.sumaRenault();
+    this.sumaChevrolet();
   }
 
   getVehiculos(): void {
@@ -35,6 +36,28 @@ export class VehiculoListComponent implements OnInit {
         }
     }
     return suma
+  }
+
+  sumaChevrolet() {
+    let suma = 0;
+    for (let i = 0; i < this.vehiculos.length; i++) {
+        if (this.vehiculos[i].marca === "Chevrolet")
+        {
+            suma += 1;
+        }
+    }
+    return suma;
+  }
+
+  sumaNissan() {
+    let suma = 0;
+    for (let i = 0; i < this.vehiculos.length; i++) {
+        if (this.vehiculos[i].marca === "Nissan")
+        {
+            suma += 1;
+        }
+    }
+    return suma;
   }
 
 }
