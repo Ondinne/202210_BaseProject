@@ -3,7 +3,7 @@ export class Vehiculo {
   marca: string;
   linea: string;
   referencia: string;
-  modelo: string;
+  modelo: number;
   kilometraje: number;
   color: string;
   imagen: string;
@@ -13,7 +13,7 @@ export class Vehiculo {
     marca: string,
     linea: string,
     referencia: string,
-    modelo: string,
+    modelo: number,
     kilometraje: number,
     color: string,
     imagen: string,

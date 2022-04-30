@@ -3,6 +3,7 @@
 
 module.exports = function (config) {
   config.set({
+    browsers: ['IE'],
     basePath: '',
     frameworks: ['jasmine', '@angular-devkit/build-angular'],
     plugins: [
